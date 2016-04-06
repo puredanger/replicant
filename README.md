@@ -17,7 +17,7 @@ but may also need to include access to any extra code needed by the tooling repl
 to start a socket server that the tool will connect to as a client with a system property:
 
 ```
--Dclojure.server.datarepl="{:port 5555 :accept 'replicant.util/data-repl}"
+-Dclojure.server.datarepl="{:port 5555 :accept replicant.util/data-repl}"
 ```
 
 The `data-repl` accept function will be called in this JVM when you connect as a 
